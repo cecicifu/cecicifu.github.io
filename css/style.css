@@ -1,5 +1,10 @@
+/* GLOBAL */
 :root {
-    
+    --font: 'Raleway', sans-serif;
+    --background: rgb(3,0,48);
+    --background-gradient: linear-gradient(90deg, rgba(3,0,48,1) 0%, rgba(128,93,147,1) 50%, rgba(3,0,48,1) 100%);
+    --icons: #D78FB2;
+    --title: #F49FBC;
 }
 * {
     padding: 0;
@@ -7,6 +12,49 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
+    background: var(--background);
+    background: var(--background-gradient);
+    list-style: none;
+    text-decoration: none;
     height: 100%;
+}
+/* MAIN */
+main.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* TITLE */
+main > section.title {
+    width: 100%;
+}
+main > section.title > h1 {
+    font-size: 5em;
+    color: var(--title);
+    text-align: center;
+}
+/* SUBTITLE */
+main > section.subtitle {
+    width: 100%;
+}
+main > section.subtitle {
+    font-size: 1em;
+    color: var(--title);
+    text-align: center;
+}
+/* ICONS */
+main > section.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    width: 15%;
+}
+main > section.icons > a > i {
+    font-size: 2.5em;
+    color: var(--icons);
 }
