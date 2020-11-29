@@ -3,6 +3,7 @@
     --font: 'Raleway', sans-serif;
     --background: rgb(3,0,48);
     --background-gradient: linear-gradient(90deg, rgba(3,0,48,1) 0%, rgba(128,93,147,1) 50%, rgba(3,0,48,1) 100%);
+    --icons-hover: #e0c8d4;
     --icons: #D78FB2;
     --title: #F49FBC;
 }
@@ -56,7 +57,14 @@ main > section.icons {
     display: flex;
     justify-content: space-around;
     margin-top: 1em;
-    width: 15%;
+    align-content: center;
+}
+main > section.icons > a {
+    margin: 0px 20px;
+}
+main > section.icons > a > i:hover {
+    color: var(--icons-hover);
+    transition: all .3s ease-in-out;
 }
 main > section.icons > a > i {
     font-size: 2.5em;
