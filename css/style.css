@@ -39,6 +39,7 @@ main > section.title {
     text-align: center;
 }
 main > section.title > div.title__border {
+    text-align: left;
     padding: .2em .5em .1em .5em;
     box-shadow: 8px 8px 6px -6px black;
 }
@@ -74,11 +75,14 @@ main div.icons > a > i {
     font-size: .5em;
     color: var(--icons);
 }
-main > section.title > div.title__border > div:first-child div.icons {
-    margin-left: .45em;
+main > section.title > div.title__border > div:last-child div {
+    margin-left: .15em;
 }
-main > section.title > div.title__border > div div.icons {
-    margin-left: .55em;
+main > section.title > div.title__border > div:first-child > div {
+    margin-right: .3em;
+}
+main > section.title > div.title__border > div:nth-child(2) > div {
+    margin-right: .4em;
 }
 main > section.title > div.title__border > div span {
     vertical-align: middle;
