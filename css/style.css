@@ -1,11 +1,10 @@
 /* GLOBAL */
 :root {
-    --font: 'Raleway', sans-serif;
-    --background: rgb(3,0,48);
-    --background-gradient: linear-gradient(90deg, rgba(3,0,48,1) 0%, rgba(128,93,147,1) 50%, rgba(3,0,48,1) 100%);
+    --font: 'Pixellari', sans-serif;
+    --background: rgb(35, 40, 64);
     --icons-hover: #e0c8d4;
     --icons: #D78FB2;
-    --title: #F49FBC;
+    --title: rgba(246, 73, 167, 0.9);
 }
 * {
     padding: 0;
@@ -14,15 +13,14 @@
 }
 body {
     font-family: var(--font);
-    background: var(--background);
-    background: var(--background-gradient);
+    background-color: var(--background);
     list-style: none;
     text-decoration: none;
     height: 100%;
 }
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.ttf');
+  font-family: 'Pixellari';
+  src: url('../fonts/Pixellari.ttf');
 }
 
 /* MAIN */
@@ -37,36 +35,58 @@ main.center {
 /* TITLE */
 main > section.title {
     width: 100%;
-}
-main > section.title > h1 {
     font-size: 5em;
     color: var(--title);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
+
+main > section.title > div.title__border {
+    padding: .2em .5em .1em .5em;
+    box-shadow: 8px 8px 6px -6px black;
+}
+@media only screen and (max-width: 400px) {
+    main > section.title {
+        font-size: 3.5em;
+    }
+}
+@media only screen and (max-width: 300px) {
+    main > section.title {
+        font-size: 3em;
+    }
+}
+main > section.title > div > div > div {
+    display: inline-block;
+}
+main > section.title > div > div:last-child > div {
+    display: inline-block;
+}
 /* SUBTITLE */
-main > section.subtitle {
+main span.subtitle {
     width: 100%;
 }
-main > section.subtitle {
-    font-size: 1em;
-    color: var(--title);
+main span.subtitle {
+    font-size: .22em;
+    color: var(--icons);
     text-align: center;
 }
 /* ICONS */
-main > section.icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
-    align-content: center;
-}
-main > section.icons > a {
-    margin: 0px 20px;
-}
-main > section.icons > a > i:hover {
+main div.icons > a > i:hover {
     color: var(--icons-hover);
     transition: all .3s ease-in-out;
 }
-main > section.icons > a > i {
-    font-size: 2.5em;
+main div.icons > a > i {
+    font-size: .5em;
     color: var(--icons);
+}
+main > section.title > div > div:first-child div.icons {
+    margin-left: .45em;
+}
+main > section.title > div > div div.icons{
+    margin-left: .55em;
+}
+main > section.title > div span {
+    vertical-align: middle;
 }
