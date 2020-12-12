@@ -1,4 +1,3 @@
-/* GLOBAL */
 :root {
     --font: 'Pixellari', sans-serif;
     --background: rgb(35, 40, 64);
@@ -22,8 +21,6 @@ body {
   font-family: 'Pixellari';
   src: url('../fonts/Pixellari.ttf');
 }
-
-/* MAIN */
 main.center {
     display: flex;
     flex-direction: column;
@@ -32,7 +29,6 @@ main.center {
     text-align: center;
     min-height: 100vh;
 }
-/* TITLE */
 main > section.title {
     width: 100%;
     font-size: 5em;
@@ -42,7 +38,6 @@ main > section.title {
     justify-content: center;
     text-align: center;
 }
-
 main > section.title > div.title__border {
     padding: .2em .5em .1em .5em;
     box-shadow: 8px 8px 6px -6px black;
@@ -57,13 +52,12 @@ main > section.title > div.title__border {
         font-size: 3em;
     }
 }
-main > section.title > div > div > div {
+main > section.title > div.title__border > div > div {
     display: inline-block;
 }
-main > section.title > div > div:last-child > div {
+main > section.title > div.title__border > div:last-child > div {
     display: inline-block;
 }
-/* SUBTITLE */
 main span.subtitle {
     width: 100%;
 }
@@ -72,7 +66,6 @@ main span.subtitle {
     color: var(--icons);
     text-align: center;
 }
-/* ICONS */
 main div.icons > a > i:hover {
     color: var(--icons-hover);
     transition: all .3s ease-in-out;
@@ -81,12 +74,12 @@ main div.icons > a > i {
     font-size: .5em;
     color: var(--icons);
 }
-main > section.title > div > div:first-child div.icons {
+main > section.title > div.title__border > div:first-child div.icons {
     margin-left: .45em;
 }
-main > section.title > div > div div.icons{
+main > section.title > div.title__border > div div.icons {
     margin-left: .55em;
 }
-main > section.title > div span {
+main > section.title > div.title__border > div span {
     vertical-align: middle;
 }
