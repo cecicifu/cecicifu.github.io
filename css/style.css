@@ -50,6 +50,10 @@ main > article > div {
         font-size: 3em;
     }
 }
+main div.icon {
+    position: relative;
+    bottom: 10px;
+}
 main div.icon > a > i {
     font-size: .5em;
     color: var(--icons);
@@ -76,4 +80,6 @@ main > article > div > section > span {
     color: var(--icons);
     text-align: center;
     vertical-align: middle;
+    position: relative;
+    bottom: 5px;
 }
