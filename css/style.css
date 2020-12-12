@@ -21,7 +21,7 @@ body {
   font-family: 'Pixellari';
   src: url('../fonts/Pixellari.ttf');
 }
-main.center {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@ main.center {
     text-align: center;
     min-height: 100vh;
 }
-main > section.title {
+main > article {
     width: 100%;
     font-size: 5em;
     color: var(--title);
@@ -38,52 +38,45 @@ main > section.title {
     justify-content: center;
     text-align: center;
 }
-main > section.title > div.title__border {
+main > article > div {
     text-align: left;
     padding: .2em .5em .1em .5em;
     box-shadow: 8px 8px 6px -6px black;
 }
 @media only screen and (max-width: 400px) {
-    main > section.title {
+    main > article {
         font-size: 3.5em;
     }
 }
 @media only screen and (max-width: 300px) {
-    main > section.title {
+    main > article {
         font-size: 3em;
     }
 }
-main > section.title > div.title__border > div > div {
-    display: inline-block;
-}
-main > section.title > div.title__border > div:last-child > div {
-    display: inline-block;
-}
-main span.subtitle {
-    width: 100%;
-}
-main span.subtitle {
-    font-size: .22em;
-    color: var(--icons);
-    text-align: center;
-}
-main div.icons > a > i:hover {
-    color: var(--icons-hover);
-    transition: all .3s ease-in-out;
-}
-main div.icons > a > i {
+main div.icon > a > i {
     font-size: .5em;
     color: var(--icons);
 }
-main > section.title > div.title__border > div:last-child div {
-    margin-left: .15em;
+main div.icon > a > i:hover {
+    color: var(--icons-hover);
+    transition: all .3s ease-in-out;
 }
-main > section.title > div.title__border > div:first-child > div {
+main > article > div > section > div {
+    display: inline-block;
+}
+main > article > div > section:first-child > div {
     margin-right: .3em;
 }
-main > section.title > div.title__border > div:nth-child(2) > div {
+main > article > div > section:nth-child(2) > div {
     margin-right: .4em;
 }
-main > section.title > div.title__border > div span {
+main > article > div > section:last-child > div {
+    margin-left: .15em;
+}
+main > article > div > section > span {
+    width: 100%;
+    font-size: .22em;
+    color: var(--icons);
+    text-align: center;
     vertical-align: middle;
 }
