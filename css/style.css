@@ -74,7 +74,7 @@ main > article > div > section:nth-child(2) > div {
 main > article > div > section:last-child > div {
     margin-left: .15em;
 }
-main > article > div > section > span {
+main > article > div > section:last-child > span {
     width: 100%;
     font-size: .22em;
     color: var(--icons);
