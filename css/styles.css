@@ -38,7 +38,7 @@ main > article {
 main > article > div {
     text-align: left;
     padding: .2em .5em .1em .5em;
-    box-shadow: 8px 8px 6px -6px black;
+    box-shadow: 8px 8px 6px -6px #000000;
 }
 @media only screen and (max-width: 400px) {
     main > article {
